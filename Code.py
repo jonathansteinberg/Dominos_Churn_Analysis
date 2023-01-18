@@ -350,7 +350,7 @@ print("Most popular coupon including wings:\n",pd.DataFrame(df_xx['CouponDesc'].
 
 df_xx = df_sample_Feb[(df_sample_Feb['CouponDesc'].str.contains("DRINK"))|df_sample_Feb['CouponDesc'].str.contains("Drink")|df_sample_Feb['CouponDesc'].str.contains("drink")]
 print("Most popular coupon including drink:\n",pd.DataFrame(df_xx['CouponDesc'].value_counts()).iloc[1,:])
-# ^Most popular one did not have a prcie associated with it 
+# ^Most popular one did not have a price associated with it 
 
 df_xx = df_sample_Feb[(df_sample_Feb['CouponDesc'].str.contains("lava"))|(df_sample_Feb['CouponDesc'].str.contains("Lava"))|(df_sample_Feb['CouponDesc'].str.contains("LAVA"))|(df_sample_Feb['CouponDesc'].str.contains("cina"))|(df_sample_Feb['CouponDesc'].str.contains("Cina"))|(df_sample_Feb['CouponDesc'].str.contains("CINA"))]
 print("Most popular coupon including desert:\n",pd.DataFrame(df_xx['CouponDesc'].value_counts()).iloc[0,:])
